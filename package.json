@@ -4,13 +4,26 @@
   "description": "Vasiti fullstack development test",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon src/index.js",
+    "start": "node src/index.js",
+    "test": "node japaFile.js"
   },
   "author": "Andrew Ekwugha",
   "license": "ISC",
   "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
     "express": "^4.17.1",
+    "imagekit": "^3.1.1",
     "knex": "^0.21.17",
-    "mysql": "^2.18.1"
+    "multer": "^1.4.2",
+    "mysql": "^2.18.1",
+    "nanoid": "^3.1.20"
+  },
+  "devDependencies": {
+    "execa": "^5.0.0",
+    "get-port": "^5.1.1",
+    "japa": "^3.1.1",
+    "supertest": "^6.1.3"
   }
 }

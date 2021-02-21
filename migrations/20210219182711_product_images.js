@@ -3,7 +3,7 @@ exports.up = function (knex) {
 		table.increments();
 		table.string('file_id').notNullable();
 		table.text('image_url').notNullable();
-		table.timestamps(true);
+		table.timestamps(true, true);
 	});
 };
 
